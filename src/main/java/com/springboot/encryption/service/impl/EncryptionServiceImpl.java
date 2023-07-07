@@ -28,7 +28,7 @@ public class EncryptionServiceImpl implements EncryptionService{
 			 System.out.println("Encrypted data: " + encryptedData);
             String decryptedData = decrypt(encryptedData, encryptionKey);
             
-         String abc= generateEncryptionKey(key);
+       //  String abc= generateEncryptionKey(key);
  //        System.out.println("Ans  "+abc);
              System.out.println("Decrypted card number: " + decryptedData);
         return encryptedData;
