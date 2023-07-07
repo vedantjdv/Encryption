@@ -22,14 +22,15 @@ public class EncryptionServiceImpl implements EncryptionService{
         String key = "1234"; 
         String encryptionKey = generateEncryptionKey(key);
 
-		System.out.println(encryptionKey+"\n");
+	//	System.out.println(encryptionKey+"\n");
           
             String encryptedData = encrypt(sensitiveData, encryptionKey);
-			// System.out.println("Encrypted data: " + encryptedData);
+			 System.out.println("Encrypted data: " + encryptedData);
             String decryptedData = decrypt(encryptedData, encryptionKey);
             
-
-            // System.out.println("Decrypted card number: " + decryptedData);
+       //  String abc= generateEncryptionKey(key);
+ //        System.out.println("Ans  "+abc);
+             System.out.println("Decrypted card number: " + decryptedData);
         return encryptedData;
     }
 
